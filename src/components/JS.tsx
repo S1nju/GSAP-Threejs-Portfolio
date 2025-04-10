@@ -6,8 +6,9 @@ Source: https://sketchfab.com/3d-models/javascript-1-e6a5af39d2b3495fb4fb1f8f94d
 Title: Javascript (1)
 */
 
-import React, { useRef } from 'react'
+
 import { useGLTF } from '@react-three/drei'
+import { Mesh } from 'three'
 
 export default function JS(props:any) {
   const { nodes, materials } = useGLTF('/models/javascript_1.glb')
@@ -16,7 +17,7 @@ export default function JS(props:any) {
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Object_2.geometry}
+        geometry={(nodes.Object_2 as Mesh).geometry}
         material={materials.mat_3220964}
         rotation={[Math.PI / 1,0, 5]}
         scale={[0.01,0.01, 0.01]}

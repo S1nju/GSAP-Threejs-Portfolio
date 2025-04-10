@@ -6,13 +6,15 @@ Source: https://sketchfab.com/3d-models/java-442de0f1b8a54966bc16466b329105af
 Title: Java
 */
 
-import React, { useRef } from 'react'
+import { useRef } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
+import { Mesh } from 'three'
 
 export  default function Java(props:any) {
-  const group = useRef()
+  const group = useRef(null)
   const { nodes, materials, animations } = useGLTF('/models/java.glb')
   const { actions } = useAnimations(animations, group)
+  console.log(actions);
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Sketchfab_Scene">
@@ -23,7 +25,7 @@ export  default function Java(props:any) {
                 name="Cube_0"
                 castShadow
                 receiveShadow
-                geometry={nodes.Cube_0.geometry}
+                geometry={(nodes.Cube_0 as Mesh).geometry}
                 material={materials.Material}
               />
             </group>
@@ -32,7 +34,7 @@ export  default function Java(props:any) {
                 name="Plane_0"
                 castShadow
                 receiveShadow
-                geometry={nodes.Plane_0.geometry}
+                geometry={(nodes.Plane_0 as Mesh).geometry}
                 material={materials.Material}
               />
             </group>
@@ -45,10 +47,10 @@ export  default function Java(props:any) {
                 name="Plane001_0"
                 castShadow
                 receiveShadow
-                geometry={nodes.Plane001_0.geometry}
+                geometry={(nodes.Plane001_0 as Mesh).geometry}
                 material={materials['Material.002']}
-                morphTargetDictionary={nodes.Plane001_0.morphTargetDictionary}
-                morphTargetInfluences={nodes.Plane001_0.morphTargetInfluences}
+                morphTargetDictionary={(nodes.Plane001_0 as Mesh).morphTargetDictionary}
+                morphTargetInfluences={(nodes.Plane001_0 as Mesh).morphTargetInfluences}
               />
             </group>
             <group
@@ -60,7 +62,7 @@ export  default function Java(props:any) {
                 name="Torus001_0"
                 castShadow
                 receiveShadow
-                geometry={nodes.Torus001_0.geometry}
+                geometry={(nodes.Torus001_0 as Mesh).geometry}
                 material={materials.Material}
               />
             </group>
@@ -73,7 +75,7 @@ export  default function Java(props:any) {
                 name="Torus000_0"
                 castShadow
                 receiveShadow
-                geometry={nodes.Torus000_0.geometry}
+                geometry={(nodes.Torus000_0 as Mesh).geometry}
                 material={materials.Material}
               />
             </group>

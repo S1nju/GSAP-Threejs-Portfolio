@@ -6,6 +6,7 @@ Source: https://sketchfab.com/3d-models/react-logo-76174ceeba96487f9863f974636f6
 Title: React logo
 */
 import { useGLTF } from '@react-three/drei'
+import { Mesh } from 'three'
 
 export default  function React(props:any) {
   const { nodes, materials } = useGLTF('/models/react_logo.glb')
@@ -15,7 +16,7 @@ export default  function React(props:any) {
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes['React-Logo_Material002_0'].geometry}
+          geometry={(nodes['React-Logo_Material002_0'] as Mesh).geometry}
           material={materials['Material.002']}
           position={[0, 0, 0]}
           rotation={[0, 0, -Math.PI / 2]}

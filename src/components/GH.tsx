@@ -6,8 +6,8 @@ Source: https://sketchfab.com/3d-models/3d-github-logo-441d03d1076b44f483df551e0
 Title: 3D Github Logo
 */
 
-import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
+import { Mesh } from 'three'
 
 export default function GH(props:any) {
   const { nodes, materials } = useGLTF('/models/3d_github_logo.glb')
@@ -17,13 +17,13 @@ export default function GH(props:any) {
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Object_4.geometry}
+          geometry={(nodes.Object_4 as Mesh).geometry}
           material={materials.glossy_putih}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Object_5.geometry}
+          geometry={(nodes.Object_5 as Mesh).geometry}
           material={materials.github}
         />
       </group>

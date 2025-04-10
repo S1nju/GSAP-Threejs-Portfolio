@@ -28,7 +28,7 @@ function Hero() {
 
     },[])
   return (
-    <section className='w-full nav-height bg-black relative my-32 mb-0'>
+    <section className='w-full nav-height bg-black  my-32 mb-0'>
 
 <div className='h-5/6 w-full flex flex-center flex-col px-2 '>
 <p className='  grey-glow  hero-title words ' style={{fontSize:"50px"}}>WELCOME TO MY PORTFOLIO</p>
