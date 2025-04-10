@@ -26,12 +26,12 @@ gsap.from('.header',{
                     {navItem}
                 </div>
             ))}
-          
-  
- 
+
+
+
             </div>
         </nav>
-        
+
         </header>
   )
 }
