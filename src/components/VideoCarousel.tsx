@@ -104,8 +104,13 @@ return (
 </div></div >
 <p>{data.degree}</p>
 </div>
-<img src={data.schoolPhotoURL} alt='school imgae' width={120} height={90} className='rounded-3xl ' ></img>
+<div  style={{backgroundImage:"url("+data.schoolPhotoURL+")" ,backgroundRepeat:"no-repeat"
+,backgroundSize:'cover',height:90
+,width:120,
+borderRadius:'10%'
 
+}}>
+   </div >
    </div >
 { }
 {index===1&& <FontAwesomeIcon  icon={faArrowUp} style={{color: "#ffffff",}} />}</div>)
