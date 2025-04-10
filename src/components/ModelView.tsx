@@ -41,7 +41,7 @@ onEnd={()=> props.setrotation(props.contolref.current.getAzimuthalAngle())}
 
 ></OrbitControls>
 <group ref={props.groupeRef} position={[0,0,0]}>
-<Suspense fallback={<div>loading</div>}>
+<Suspense fallback={'loading'}>
 { props.index===1&&<React ></React>}
 { props.index===2&&<JS ></JS>}
 { props.index===3&&<GH ></GH>}
