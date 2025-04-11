@@ -1,3 +1,4 @@
+
 import Contact from "./components/Contact"
 import Education from "./components/Education"
 import Experience from "./components/Experience"
@@ -9,7 +10,7 @@ import Skills from "./components/Skills"
 
 function App() {
   return (
-   <main className="bg-black">
+   <main className="bg-transparent" style={{backgroundColor:'transparent'}}>
     <NavBar />
     <Hero />
     <Education />

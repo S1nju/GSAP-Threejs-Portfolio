@@ -45,7 +45,7 @@ canvas {
   }
 
   .nav-height {
-    @apply h-[calc(100vh-60px)]
+    @apply h-[calc(100vh-116px)]
   }
 
   .btn {
@@ -97,7 +97,7 @@ canvas {
   }
 
   .hero-title {
-    @apply text-center font-semibold text-[#ffffff]  md:text-2xl 
+    @apply text-center font-semibold text-[#ffffff]  md:text-2xl
   }
 
   .hiw-title {
