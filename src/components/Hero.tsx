@@ -61,7 +61,7 @@ function Hero() {
 
 <Threads
     amplitude={0.5}
-    distance={0.9}
+    distance={0.2}
     enableMouseInteraction={false}
   />
 </div>
