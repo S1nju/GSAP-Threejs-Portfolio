@@ -20,6 +20,7 @@ function Education() {
   <h1 id="title" className="section-heading">
 Education
   </h1>
+  <div className="w-36 h-1 bg-[#9368EC]  rounded-full mt-4"></div>
 </div>
 
 </div>

@@ -19,6 +19,7 @@ export interface CarouselItem {
   description: string;
   id: number;
   icon: JSX.Element;
+  photo?:string
 }
 
 export interface CarouselProps {
@@ -205,12 +206,20 @@ export default function Carousel({
           return (
             <motion.div
               key={index}
-              className={`carousel-item ${round ? "round" : ""}`}
+              className={`carousel-item ${round ? "round" : ""} bg-black/40`}
+
               style={{
                 width: itemWidth,
                 height: round ? itemWidth : "100%",
                 rotateY: rotateY,
                 ...(round && { borderRadius: "50%" }),
+
+                backgroundImage:" linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("+item.photo+")",
+                backgroundRepeat:"no-repeat",
+backgroundPosition:'center',
+                backgroundSize:"cover",
+
+
               }}
               transition={effectiveTransition}
             >

@@ -92,7 +92,7 @@ gsap.from('.card',{
 return (
 <div  key={index} className='w-full flex flex-col justify-center card '>
 {index===1&&<FontAwesomeIcon  icon={faArrowUp}  style={{color: "#ffffff",}} />}
-<div className='flex gap-5 justify-between my-5 rounded-3xl bg-gray-800 py-7 px-7 border border-gray-500' >
+<div className='flex gap-5 justify-between my-5 rounded-3xl py-7 px-7 border border-gray-500' >
 <div className='flex flex-col gap-5' >
 <div>
 <h3 className='font-bold'> {data.schoolname}</h3>

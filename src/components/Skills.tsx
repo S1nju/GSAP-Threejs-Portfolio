@@ -36,7 +36,9 @@ const github = useRef(new THREE.Group())
     <section className="common-padding">
 
 <div className="screen-max-width">
-<h1 id='heading' className="section-heading">Tech Stack</h1>
+  <div>
+<h1 id='heading' className="section-heading ">Tech Stack</h1>
+<div className="w-36 h-1 bg-[#9368EC]  rounded-full mt-4"></div></div>
 <div className="flex items-center mt-5">
 <div className="w-full h-[50vh] items-center  max-lg:h-[150vh]  flex max-lg:flex-col   overflow-hidden relative text-center font-bold">
 

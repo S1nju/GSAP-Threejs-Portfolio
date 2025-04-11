@@ -7,7 +7,18 @@ import { faCodeBranch } from '@fortawesome/free-solid-svg-icons'
 import { faJs, faJava, faReact, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faDatabase } from '@fortawesome/free-solid-svg-icons'
 import Squares from '../blocks/Backgrounds/Squares/Squares'
+import { useEffect, useState } from 'react'
 function Hero() {
+  const [width,setWidth]=useState<number>(window.innerWidth)
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(
+        window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+    }, [])
+
     useGSAP(()=>{
         gsap.to('.hero-title',{
         opacity:1,
@@ -55,13 +66,13 @@ function Hero() {
 
   </a>
 
-<div className='threads' style={{ width: '100vw', height: '100%', position: 'absolute',opacity:0.4, top:0,zIndex:-2}}>
+<div className='threads' style={{ width: '100vw', height: '100%', position: 'absolute',top:width>700?0:230,opacity:0.4,zIndex:-2}}>
 
 
 
 <Threads
     amplitude={0.5}
-    distance={0.2}
+    distance={width<700?0:1}
     enableMouseInteraction={false}
   />
 </div>

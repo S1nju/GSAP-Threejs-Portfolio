@@ -1,5 +1,4 @@
 
-import Contact from "./components/Contact"
 import Education from "./components/Education"
 import Experience from "./components/Experience"
 import Footer from "./components/Footer"
@@ -13,11 +12,12 @@ function App() {
    <main className="bg-transparent" style={{backgroundColor:'transparent'}}>
     <NavBar />
     <Hero />
-    <Education />
+
     <Skills/>
+    <Education />
     <Experience/>
     <Projects/>
-    <Contact />
+
     <Footer />
    </main>
   )
