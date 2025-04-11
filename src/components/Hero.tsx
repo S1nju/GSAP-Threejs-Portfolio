@@ -66,13 +66,13 @@ function Hero() {
 
   </a>
 
-<div className='threads' style={{ width: '100vw', height: '100%', position: 'absolute',top:width>700?0:230,opacity:0.4,zIndex:-2}}>
+<div className='threads' style={{ width: '100vw', height: '100%', position: 'absolute',top:width>1000?0:230,opacity:0.4,zIndex:-2}}>
 
 
 
 <Threads
     amplitude={0.5}
-    distance={width<700?0:1}
+    distance={width<1000?0:1}
     enableMouseInteraction={false}
   />
 </div>
