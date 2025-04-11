@@ -216,7 +216,7 @@ export default function Carousel({
 
                 backgroundImage:" linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("+item.photo+")",
                 backgroundRepeat:"no-repeat",
-backgroundPosition:'center',
+                backgroundPosition:'center',
                 backgroundSize:"cover",
 
 
