@@ -17,7 +17,7 @@ gsap.from('.header',{
 
 },[])
   return (
-    <header  className='header w-3/5 h-13 my-8 mx-auto  px-5  max-md:px-12    flex justify-between items-center border border-gray-100 rounded-full  '>
+    <header  className='header w-3/5 my-5  mx-auto  px-5  max-md:px-12    flex justify-between items-center border border-gray-100 rounded-full  '>
         <nav className="flex w-full justify-between screen-max-width max-md:justify-center ">
             <img src={logoImg} alt="Logo" height={90} width={90} className="logo"  />
             <div className='flex flex-1 justify-end items-center gap-2 max-md:hidden '>

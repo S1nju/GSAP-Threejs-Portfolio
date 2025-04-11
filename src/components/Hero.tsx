@@ -29,10 +29,10 @@ function Hero() {
 
     },[])
   return (
-    <section className='w-full nav-height bg-black   mb-0 ' style={{backgroundColor:'transparent'}} >
+    <section className='w-full nav-height bg-black    ' style={{backgroundColor:'transparent'}} >
 
 <div className='h-5/6 w-full flex flex-center flex-col px-2 '>
-<p className='  grey-glow  hero-title words ' style={{fontSize:"50px"}}>WELCOME TO MY PORTFOLIO</p>
+<p className='  grey-glow  hero-title words ' >WELCOME TO MY PORTFOLIO</p>
 <p className='py-10 font-semibold threads text-center text-gray-200'>Full-stack developer building secure, user-focused  apps with
  <span className='text-[#9368EC]'> React/Next .js | .ts</span>
  ,<span className='text-[#9368EC]'> Spring Boot</span>
