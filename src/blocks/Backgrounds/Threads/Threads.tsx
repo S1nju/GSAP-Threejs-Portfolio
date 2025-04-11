@@ -91,7 +91,7 @@ float lineFn(vec2 st, float width, float perc, float offset, vec2 mouse, float t
 
     float line_end = smoothstep(
         y,
-        y - (width / 4.0) - (u_line_blur * pixel(4.0, iResolution.xy) * blur),
+        y - (width / 2.0) - (u_line_blur * pixel(1.0, iResolution.xy) * blur),
         st.y
     );
 
@@ -130,7 +130,7 @@ void main() {
 `;
 
 const Threads: React.FC<ThreadsProps> = ({
-  color = [1, 0, 32324],
+  color = [1, 1, 32324],
   amplitude = 1,
   distance = 0,
   enableMouseInteraction = false,
