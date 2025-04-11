@@ -26,7 +26,10 @@ function Skills() {
   const [jRotation, setJRotation] = useState(0)
   const [jsRotation, setJsRotation] = useState(0)
   const [ghRotation, setGhRotation] = useState(0)
-
+  console.log(reactRotation);
+  console.log(jRotation);
+  console.log(jsRotation);
+  console.log(ghRotation);
   // Skills data
   const skills = [
     {
